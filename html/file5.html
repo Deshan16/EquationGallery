@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>සමීකරණ එකතුව</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-items">
+            <a href="file1.html">යාන්ත්‍ර විද්‍යාව</a>
+            <a href="file2.html">දෝලන හා තරංග</a>
+            <a href="file3.html">තාපය</a>
+            <a href="file4.html">පදාර්ථයේ යාන්ත්‍රික ගුණ</a>
+            <a href="file5.html" class="selected">ධාරා විද්‍යුතය</a>
+        </div>
+    </div>
+    <div class="center">
+        <div class="container">
+            <div class="current">
+                <dl>
+                    <dt>ධාරාව</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(I = \frac{Ne}{t}\)</p>
+                            </div>
+                            <div class="def">
+                                \(I\) - ධාරාව (A) <br>
+                                \(N\) - ඉලෙක්ට්‍රෝන ගණන <br>
+                                \(e\) - ඉලෙක්ට්‍රෝනයක ආරෝපනය (\(1.6 \times 10^{-19} \; c\)) <br>
+                                \(t\) - කාලය (s)
+                            </div>
+                        </div>
+                    </dd>
+                    
+                    <dt>ධාරා ඝණත්වය</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(J = \frac{I}{A}\)</p>
+                            </div>
+                            <div class="def">
+                                \(J\) - ධාරා ඝණත්වය (\(\mathrm{Am^{-2}}\)) <br>
+                                \(I\) - ධාරාව (A) <br>
+                                \(A\) - වර්ගඵලය (\(\mathrm{m^2}\))
+                            </div>
+                        </div>
+                    </dd>
+                    
+                    <dt>ප්ලාවිත ප්‍රවේගය</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(u = \frac{I}{Ane}\)</p>
+                                <p>\(u = \frac{J}{ne}\)</p>
+                            </div>
+                            <div class="def">
+                                \(u\) - ප්ලාවිත ප්‍රවේගය (\(\mathrm{ms^{-1}}\)) <br>
+                                \(I\) - ධාරාව (A) <br>
+                                \(A\) - වර්ගඵලය (\(\mathrm{m^2}\)) <br>
+                                \(J\) - ධාරා ඝණත්වය (\(\mathrm{Am^{-2}}\)) <br>
+                                \(N\) - ඉලෙක්ට්‍රෝන ගණන <br>
+                                \(e\) - ඉලෙක්ට්‍රෝනයක ආරෝපනය (\(1.6 \times 10^{-19} \; c\))
+                            </div>
+                        </div>
+                    </dd>
+                    
+                    <dt>විභව අන්තරය</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(V = IR\)</p>
+                            </div>
+                            <div class="def">
+                                \(V\) - විභව අන්තරය (V) <br>
+                                \(I\) - ධාරාව (I) <br>
+                                \(R\) - ප්‍රතිරෝධය (\(\mathrm{\Omega}\))
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            
+            <div class="Equatorialresistance">
+                <dl>
+                    <p>සමක ප්‍රතිරෝධය</p>
+                    <dt>ප්‍රතිරෝධක ශ්‍රේණිගත විට</dt>
+                    <dd>
+                        <div class="serial">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="210" height="60">
+                                <defs>
+                                    <symbol id="resistor-zig" viewBox="0 0 120 40">
+                                    <line x1="0" y1="20" x2="20" y2="20" stroke="currentColor" stroke-width="2"/>
+                                    <polyline points="20,20 30,10 40,30 50,10 60,30 70,10 80,30 90,20" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                    <line x1="90" y1="20" x2="120" y2="20" stroke="currentColor" stroke-width="2"/>
+                                    </symbol>
+                                </defs>
+                        
+                                <line x1="10" x2="30" y1="45" y2="45" stroke="#1868fd" />
+                                <use href="#resistor-zig" x="30" y="15" width="55" color="#1868fd" />
+                                <use href="#resistor-zig" x="85" y="15" width="55" color="#1868fd" />
+                                <use href="#resistor-zig" x="135" y="15" width="55" color="#1868fd" />
+                                <line x1="190" x2="210" y1="45" y2="45" stroke="#1868fd" />
+                        
+                                <text x="50" y="30" fill="#cecece">R₁</text>
+                                <text x="104" y="30" fill="#cecece">R₂</text>
+                                <text x="155" y="30" fill="#cecece">R₃</text>
+                            </svg>
+                            <p>\(\mathrm{R = R_1 + R_2 + R_3}\)</p>
+                        </div>
+                    </dd>
+                    
+                    <dt>ප්‍රතිරෝධක සමාන්තරගත විට</dt>
+                    <dd>
+                        <div class="parallel">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="190" height="180">
+                                <defs>
+                                    <symbol id="resistor-zig" viewBox="0 0 120 40">
+                                    <line x1="0" y1="20" x2="20" y2="20" stroke="currentColor" stroke-width="2"/>
+                                    <polyline points="20,20 30,10 40,30 50,10 60,30 70,10 80,30 90,20" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                    <line x1="90" y1="20" x2="120" y2="20" stroke="currentColor" stroke-width="2"/>
+                                    </symbol>
+                                </defs>
+                            
+                                <line x1="40" x2="60" y1="60" y2="60" stroke="#1868fd" />
+                                <line x1="110" x2="130" y1="60" y2="60" stroke="#1868fd" />
+                                
+                                <line x1="0" x2="60" y1="100" y2="100" stroke="#1868fd" />
+                                <line x1="110" x2="130" y1="100" y2="100" stroke="#1868fd" />
+                                <line x1="130" x2="160" y1="100" y2="100" stroke="#1868fd" />
+                                
+                                <line x1="40" x2="60" y1="140" y2="140" stroke="#1868fd" />
+                                <line x1="110" x2="130" y1="140" y2="140" stroke="#1868fd" />
+                                
+                                <line x1="40" x2="40" y1="60" y2="110" stroke="#1868fd" />
+                                <line x1="40" x2="40" y1="110" y2="140" stroke="#1868fd" />
+                                
+                                <line x1="130" x2="130" y1="60" y2="110" stroke="#1868fd" />
+                                <line x1="130" x2="130" y1="110" y2="140" stroke="#1868fd" />
+                                
+                                <use href="#resistor-zig" x="60" y="-30" width="50" color="#1868fd"/>
+                                <use href="#resistor-zig" x="60" y="10" width="50" color="#1868fd"/>
+                                <use href="#resistor-zig" x="60" y="50" width="50" color="#1868fd"/>
+                            
+                                <text x="75" y="50" fill="#cecece">R₁</text>
+                                <text x="75" y="90" fill="#cecece">R₂</text>
+                                <text x="75" y="130" fill="#cecece">R₃</text>
+                            </svg>
+                            <p>\(\mathrm{\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}}\)</p>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

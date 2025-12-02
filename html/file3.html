@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>සමීකරණ එකතුව</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-items">
+            <a href="file1.html">යාන්ත්‍ර විද්‍යාව</a>
+            <a href="file2.html">දෝලන හා තරංග</a>
+            <a href="file3.html" class="selected">තාපය</a>
+            <a href="file4.html">පදාර්ථයේ යාන්ත්‍රික ගුණ</a>
+            <a href="file5.html">ධාරා විද්‍යුතය</a>
+        </div>
+    </div>
+    <div class="center">
+        <div class="container">
+            <div class="solid-thermal-expantion">
+                <p class="title">ඝන ද්‍රව්‍යවල ප්‍රසාරණය</p>
+                <dl>
+                    <dt>රේඛීය ප්‍රසාරණය (\(\alpha\))</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(\ell_2 = \ell_1(1 + \alpha{\Delta}\theta)\)</p>
+                            </div>
+                            <div class="def">
+                                \(\ell_2\) - උෂ්ණත්ව වෙනසින් පසු දිග (m) <br>
+                                \(\ell_1\) - උෂ්ණත්ව වෙනසට පෙර දිග (m) <br>
+                                \(\alpha\) - රේඛීය ප්‍රසාරණතාව (\(\mathrm{k^{-1}}\) හෝ \(\mathrm{C^{-1}}\)) <br>
+                                \({\Delta}\theta\) - උෂ්ණත්ව වෙනස (k හෝ \(\mathrm{^0C}\))
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>වර්ගඵල ප්‍රසාරණය (\(\beta\))</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(A_2 = A_1(1 + \beta{\Delta}\theta)\)</p>
+                            </div>
+                            <div class="def">
+                                \(A_2\) - උෂ්ණත්ව වෙනසින් පසු වර්ගඵලය (\(\mathrm{m^2}\)) <br>
+                                \(A_1\) - උෂ්ණත්ව වෙනසට පෙර වර්ගඵලය (\(\mathrm{m^2}\)) <br>
+                                \(\beta\) - වර්ගඵල ප්‍රසාරණතාව (\(\mathrm{k^{-1}}\) හෝ \(\mathrm{C^{-1}}\)) <br>
+                                \({\Delta}\theta\) - උෂ්ණත්ව වෙනස (k හෝ \(\mathrm{^0C}\))
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>පරිමා ප්‍රසාරණය (\(\gamma\))</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(V_2  = V_1(1 + \gamma{\Delta}\theta)\)</p>
+                            </div>
+                            <div class="def">
+                                \(V_2\) - උෂ්ණත්ව වෙනසින් පසු පරිමාව (\(\mathrm{m^3}\)) <br>
+                                \(V_1\) - උෂ්ණත්ව වෙනසට පෙර පරිමාව (\(\mathrm{m^3}\)) <br>
+                                \(\gamma\) - පරිමා ප්‍රසාරණතාව (\(\mathrm{k^{-1}}\) හෝ \(\mathrm{C^{-1}}\)) <br>
+                                \({\Delta}\theta\) - උෂ්ණත්ව වෙනස (k හෝ \(\mathrm{^0C}\))
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>රේඛීය ප්‍රසාරණය හා වර්ගඵල ප්‍රසාරණය අතර සම්බන්දතාව</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                \(\beta = 2\alpha\)
+                            </div>
+                            <div class="def">
+                                \(\beta\) - වර්ගඵල ප්‍රසාරණතාව (\(\mathrm{k^{-1}}\) හෝ \(\mathrm{C^{-1}}\)) <br>
+                                \(\alpha\) - රේඛීය ප්‍රසාරණතාව (\(\mathrm{k^{-1}}\) හෝ \(\mathrm{C^{-1}}\)) 
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>රේඛීය ප්‍රසාරණය හා පරිමා ප්‍රසාරණය අතර සම්බන්දතාව</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                \(\gamma = 3\alpha\)
+                            </div>
+                            <div class="def">
+                                \(\gamma\) - පරිමා ප්‍රසාරණතාව (\(\mathrm{k^{-1}}\) හෝ \(\mathrm{C^{-1}}\)) <br>
+                                \(\alpha\) - රේඛීය ප්‍රසාරණතාව (\(\mathrm{k^{-1}}\) හෝ \(\mathrm{C^{-1}}\)) 
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="liquid-thermal-expantion">
+                <p class="title">ද්‍රව ප්‍රසාරණය</p>
+                <dl>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(\Delta V_R = \Delta V_A + \Delta V_C\)</p>
+                            </div>
+                            <div class="def">
+                                \(\Delta V_R\) - ද්‍රව සත්‍ය ප්‍රසාරණය (\(\mathrm{m^3}\))<br>
+                                \(\Delta V_A\) - ද්‍රව දෘෂ්‍ය ප්‍රසාරණය (\(\mathrm{m^3}\))<br>
+                                \(\Delta V_C\) - භජනයේ පරිමා ප්‍රසාරණය (\(\mathrm{m^3}\))
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="thermal">
+                <p class="title">තාපමිතිය</p>
+                <dl>
+                    <dt>වස්තුවක තාප ධාරිතාව</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(\Delta Q = C\Delta\theta\)</p>
+                            </div>
+                            <div class="def">
+                                \(\Delta Q\) - තාප ප්‍රමාණය (J) <br>
+                                \(C\) - තාප ධාරිතාව (\(\mathrm{Jk^{-1}}\) හෝ \(\mathrm{JC^{-1}}\)) <br>
+                                \(\Delta\theta\) - උෂ්ණත්ව වෙනස (k හෝ \(\mathrm{^0C}\))
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>වස්තුවක විශිෂ්ඨ තාප ධාරිතාව</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(\Delta Q = mc\Delta\theta\)</p>
+                            </div>
+                            <div class="def">
+                                \(\Delta Q\) - තාප ප්‍රමාණය (J) <br>
+                                \(m\) - ස්කන්ධය (kg) <br>
+                                \(c\) - විශිෂ්ඨ තාප ධාරිතාව (\(\mathrm{Jkg^{-1}K^{-1}}\) හෝ \(\mathrm{Jkg^{-1}C^{-1}}\)) <br>
+                                \(\Delta\theta\) - උෂ්ණත්ව වෙනස (k හෝ \(\mathrm{^0C}\))
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>විද්‍යුතය මගින් සපයන තාප ශක්තිය</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(Q = IVt\)</p>
+                            </div>
+                            <div class="def">
+                                \(Q\) - තාප ප්‍රමාණය (J) <br>
+                                \(I\) - ධාරාව (A) <br>
+                                \(V\) - විභව අන්තරය (v) <br>
+                                \(\mathrm{t}\) - කලය (s)
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="thermal-waste">
+                <p class="title">උණුසුම් වස්තුවකින් තාපය හානිවීමේ සීඝ්‍රතාව</p>
+                <dl>
+                    <dt>තාපය හානිවීමේ සීඝ්‍රතාව</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(\frac{\Delta Q}{\Delta t} = kA(\theta - \theta_R)\)</p>
+                            </div>
+                            <div class="def">
+                                \(\Delta Q\) - තාප ප්‍රමාණය (J) <br>
+                                \(\Delta t\) - කාලය (s) <br>
+                                \(A\) - වර්ගඵලය (\(\mathrm{m^2}\)) <br>
+                                \(\theta\) - වස්තුවෙ උෂ්ණත්වය (k හෝ \(\mathrm{^0C}\)) <br>
+                                \(\theta_R\) - පරිසර උෂ්ණත්වය (k හෝ \(\mathrm{^0C}\)) <br>
+                                \(k\) - වස්තුවෙ පෘෂ්ටික ස්වභාවය මත රදා පවතින නියතයකි
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>උෂ්ණත්වය හානිවිමේ සීඝ්‍රතාව</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(\frac{\Delta\theta}{\Delta t} - \frac{kA}{mc}(\theta - \theta_R)\)</p>
+                            </div>
+                            <div class="def">
+                                \(\Delta\theta\) - උෂ්ණත්වය (k හෝ \(\mathrm{^0C}\)) <br>
+                                \(\Delta t\) - කාලය (s) <br>
+                                \(A\) - වර්ගඵලය (\(\mathrm{m^2}\)) <br>
+                                \(m\) - ස්කන්ධය (kg) <br>
+                                \(c\) - විශිෂ්ඨ තාප ධාරිතාව (\(\mathrm{Jkg^{-1}K^{-1}}\) හෝ \(\mathrm{Jkg^{-1}C^{-1}}\)) <br>
+                                \(\theta\) - වස්තුවෙ උෂ්ණත්වය (k හෝ \(\mathrm{^0C}\)) <br>
+                                \(\theta_R\) - පරිසර උෂ්ණත්වය (k හෝ \(\mathrm{^0C}\)) <br>
+                                \(k\) - වස්තුවෙ පෘෂ්ටික ස්වභාවය මත රදා පවතින නියතයකි
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="hidden_temp">
+                <p class="title">ගුප්ත තාපය</p>
+                <dl>
+                    <dt>විලයනයේ විශිෂ්ඨ ගුප්ත තාපය</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(\Delta Q = mL\)</p>
+                            </div>
+                            <div class="def">
+                                \(\Delta Q\) - ලබා දිය යුතු තාප ප්‍රමාණය (J) <br>
+                                \(m\) - ස්කන්ධය (kg) <br>
+                                \(L\) - විලයනයේ විශිෂ්ඨ ගුප්ත තාපය (\(\mathrm{Jkg^{-1}}\))
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="gass_behavior">
+                <p class="title">වායුවල හැසිරීම</p>
+                <dl>
+                    <dt>බොයිල් නියමය</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(PV = K\)</p>
+                            </div>
+                            <div class="def">
+                                \(P\) - පීඩනය (Pa) <br>
+                                \(V\) - පරිමාව (\(\mathrm{m^3}\))
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>චාර්ල්ස් නියමය</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(\frac{V}{T} = K\)</p>
+                            </div>
+                            <div class="def">
+                                \(V\) - පරිමව (\(\mathrm{m^3}\)) <br>
+                                \(T\) - උෂ්ණත්වය (K)
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>පීඩන නියමය</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(\frac{P}{T} = K\)</p>
+                            </div>
+                            <div class="def">
+                                \(P\) - පීඩනය (Pa) <br>
+                                \(T\) - (K)
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>වායුවක අවස්තා සමීකරණය</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}\)</p>
+                            </div>
+                            <div class="def">
+                                \(P_1, P_2\) - පීඩනය (Pa) <br>
+                                \(V_1, V_2\) - පරිමාව (\(\mathrm{m^3}\)) <br>
+                                \(T_1, T_2\) - උෂ්ණත්වය (K)
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>පරිපූර්ණ වායු සමීකරණය</dt>
+                    <dd>
+                        <div class="section">
+                            <div class="">
+                                <p>\(PV = nRT\)</p>
+                            </div>
+                            <div class="def">
+                                \(P\) - පීඩනය (Pa) <br>
+                                \(V\) - පරිමව \(\mathrm{m^3}\) <br>
+                                \(n\) - මවුල ගණන <br>
+                                \(R\) - සාර්වත්‍ර වායු නියතය (\(\mathrm{8.314 \hspace{0.3cm} Jmol^{-1}K^{-1}}\)) <br>
+                                \(T\) - උෂ්ණත්වය (K)
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
