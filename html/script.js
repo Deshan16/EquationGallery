@@ -6,7 +6,8 @@ const links = [
     ["දෝලන හා තරංග", "file2.html"],
     ["තාපය", "file3.html"],
     ["පදාර්ථයේ යාන්ත්‍රික ගුණ", "file4.html"],
-    ["ධාරා විද්‍යුතය", "file5.html"]
+    ["ධාරා විද්‍යුතය", "file5.html"],
+    ["ආලෝකය", "file6.html"]
 ];
 
 let currentPage = window.location.pathname.split('/').pop();
